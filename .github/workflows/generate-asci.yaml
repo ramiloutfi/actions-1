@@ -13,5 +13,5 @@ jobs:
             run: ls
           - name: Excuting shell script
             run: |
-             chmod +x
+             chmod +x ascii-script.sh
              ./ascii-script.sh
