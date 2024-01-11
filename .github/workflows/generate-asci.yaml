@@ -14,4 +14,5 @@ jobs:
             run: ls
 
           - name: Excuting shell script
-            run:  .test.sh
+            run: |
+                  chmod +x test.sh
