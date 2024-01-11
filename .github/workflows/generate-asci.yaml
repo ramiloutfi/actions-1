@@ -16,3 +16,4 @@ jobs:
           - name: Excuting shell script
             run: |
                   chmod +x .github/workflows/test.sh
+                  ./test.sh
