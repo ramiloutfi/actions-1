@@ -15,4 +15,4 @@ jobs:
 
           - name: Excuting shell script
             run: |
-                  chmod +x test.sh
+                  chmod +x .github/workflows/test.sh
