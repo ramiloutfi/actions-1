@@ -9,8 +9,10 @@ jobs:
           steps:
           - name: checkout repo
             uses: actions/checkout@v4
+
           - name: lsit Repo Files
             run: ls
+
           - name: Excuting shell script
             run: |
              chmod +x ascii-script.sh
