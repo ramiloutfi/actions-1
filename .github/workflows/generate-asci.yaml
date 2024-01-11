@@ -9,27 +9,7 @@ jobs:
           steps:
           - name: checkout repo
             uses: actions/checkout@v4
-          - name: output the message on actions result
-            uses: Code-Hex/neo-cowsay-action@v1
-            with:
-              message: | # Support multi-lines
-                This is cowsay
-                Hello, World!!
-          - name: cowsay on the comment
-            uses: Code-Hex/neo-cowsay-action@v1
-            with:
-              message: 'Hello, World with random'
-              cow: 'random' # If specified, it shows random ascii art.
-              cowsay_on_comment: true
-            env:
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          - name: output pipeline
-            id: cowsay_output_id # You want id
-            uses: Code-Hex/neo-cowsay-action@v1
-            with:
-              message: 'Hello, World'
-              cow: 'gopher' # ascii art list: https://github.com/Code-Hex/Neo-cowsay/tree/master/cows
-              cowsay_to_output: 'cowsay'
-          - name: print output
-            run: |
-              echo "${{ steps.cowsay_output_id.outputs.cowsay }}"
+          - name: lsit Repo Files
+            run: ls ltra
+          - name: Excuting shell script
+            run: ./ascii-script.sh
